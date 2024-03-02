@@ -8,6 +8,8 @@ import Faq from './pages/Faq'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import Services, { servicesLoader } from './pages/Services'
+import Timer from './pages/Timer';
+import Connect from './pages/Connect';
 
 // layouts
 
@@ -23,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="help" element={<HelpLayout />} />
         <Route path="faq" element={<Faq />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="timer" element={<Timer />} />
 
       <Route path="services" element={<ServicesLayout />} />   
       <Route 

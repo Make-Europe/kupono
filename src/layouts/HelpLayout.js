@@ -1,16 +1,27 @@
 import { NavLink, Outlet } from "react-router-dom";
+import React from 'react';
+import Timer from '../pages/Timer'; // ACHTUNG
+import { EtherSymbol } from "ethers";
+
 
 export default function HelpLayout() {
   return (
     <div className="help-layout">
 
-        <h2>Website Help</h2>
-        <p>Website Help Website Help Website Help Website Help Website Help</p>
+        <h2>Connect.</h2>
+        <h2> Earn.</h2>
+        <h2>Checkout</h2>
+
+        <div className="timer">
+         { <p><Timer /></p> }
+       </div>
+        
     
         <nav>
-            <NavLink to="/help">Help</NavLink>
-            <NavLink to="/faq">FAQ</NavLink>
+            <NavLink to="/timer"><button>Start Timer</button></NavLink>
+            <NavLink to="/faq"><button>Stop</button></NavLink>
         </nav>
+
 
         <Outlet />
     </div>
