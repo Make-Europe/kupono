@@ -7,22 +7,20 @@ import { EtherSymbol } from "ethers";
 export default function HelpLayout() {
   return (
     <div className="help-layout">
+      <center>
 
-        <h2>Connect.</h2>
-        <h2> Earn.</h2>
-        <h2>Checkout</h2>
+        <h2>Connected ✅</h2>
 
         <div className="timer">
-         { <p><Timer /></p> }
+         { <p><h1><Timer /></h1></p> }
        </div>
         
     
         <nav>
-            <NavLink to="/timer"><button>Start Timer</button></NavLink>
-            <NavLink to="/faq"><button>Stop</button></NavLink>
+            <NavLink to="/contact"><button>Stop</button></NavLink>
         </nav>
 
-
+</center>
         <Outlet />
     </div>
   )

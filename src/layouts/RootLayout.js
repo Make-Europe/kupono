@@ -5,14 +5,9 @@ export default function RootLayout() {
     <div className="root-layout">
         <header>
             <nav>
-                    <NavLink to='/'>⌂</NavLink>
-                    <NavLink to="contact">$</NavLink>
-                    <NavLink to="help">?</NavLink>
-                    <NavLink to="about">˽</NavLink>
-
-                    <NavLink to="faq">⎗</NavLink>
-
-                    <NavLink to="services">Services</NavLink>
+                    <NavLink to='/'><b><h1>🏠</h1></b></NavLink>
+                    <NavLink to="help"><h1><b>⏰</b></h1></NavLink>
+                    <NavLink to="contact"><h1><b>💲</b></h1></NavLink>
             </nav>
             <h1>HourPay.</h1>
         </header>

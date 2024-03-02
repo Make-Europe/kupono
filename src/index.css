@@ -8,7 +8,7 @@ body {
   margin: 10;
   padding: 22px;
   justify-content: center;
-  font-family: "Arial";
+  font-family: "Verdana";
   background: var(--secondary);
 }
 * {
